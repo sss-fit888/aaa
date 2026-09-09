@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オンラインボディメイクコーチング | 無料個別カウンセリング</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+            background-color: #0f172a;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #1e293b;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+        /* Header / FV */
+        .hero {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            padding: 60px 30px;
+            text-align: center;
+            border-bottom: 2px solid #334155;
+        }
+        .badge {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0f172a;
+            font-weight: bold;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+            letter-spacing: 0.05em;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            color: #ffffff;
+        }
+        .hero h1 span {
+            color: #38bdf8;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin-bottom: 35px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #22c55e;
+            color: #ffffff;
+            font-size: 1.25rem;
+            font-weight: bold;
+            padding: 18px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 10px 20px rgba(34, 197, 94, 0.3);
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background: #16a34a;
+            transform: translateY(-2px);
+        }
+        .cta-sub {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            margin-top: 12px;
+        }
+        
+        /* Sections */
+        section {
+            padding: 50px 30px;
+            border-bottom: 1px solid #334155;
+        }
+        h2 {
+            font-size: 1.6rem;
+            text-align: center;
+            margin-bottom: 35px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        h2 span {
+            border-bottom: 3px solid #38bdf8;
+            padding-bottom: 6px;
+        }
+
+        /* Troubles */
+        .trouble-box {
+            background: #0f172a;
+            border-left: 4px solid #ef4444;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            color: #cbd5e1;
+        }
+        .trouble-conclusion {
+            text-align: center;
+            font-size: 1.15rem;
+            font-weight: bold;
+            margin-top: 30px;
+            color: #38bdf8;
+        }
+
+        /* Benefits */
+        .benefit-grid {
+            display: block;
+        }
+        .benefit-card {
+            background: #0f172a;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #334155;
+        }
+        .benefit-card h3 {
+            color: #38bdf8;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .benefit-card p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        /* Profile */
+        .profile-box {
+            background: #0f172a;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #334155;
+        }
+        .profile-box h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+        .profile-box p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            text-align: left;
+        }
+
+        /* Gifts / Bonus */
+        .gift-box {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e293b 100%);
+            border: 2px dashed #38bdf8;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+        .gift-item {
+            background: rgba(15, 23, 42, 0.6);
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #f8fafc;
+        }
+        .gift-item span {
+            color: #38bdf8;
+        }
+
+        /* Footer CTA */
+        .footer-cta {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            text-align: center;
+            padding: 60px 30px;
+        }
+        .footer-cta h2 {
+            margin-bottom: 20px;
+        }
+        .footer-cta p {
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- ファーストビュー -->
+    <header class="hero">
+        <div class="badge">完全オーダーメイド・オンラインコーチング</div>
+        <h1>もう、無理な食事制限や<br>リバウンドで悩まない。<span>一生モノのカラダ</span>を手に入れる</h1>
+        <p>筋トレ・食事・マインドの3軸で、あなた史上最高に引き締まった美ボディへ。</p>
+        <a href="https://lin.ee/your-line-link" class="cta-button" target="_blank">👉 無料個別カウンセリングを受ける</a>
+        <div class="cta-sub">※公式LINE追加だけで今すぐ特典を受け取れます</div>
+    </header>
+
+    <!-- 課題提起 -->
+    <section>
+        <h2><span>こんなお悩みありませんか？</span></h2>
+        <div class="trouble-box">✔ ジムに入会したものの、何から始めていいか分からない…</div>
+        <div class="trouble-box">✔ 自己流でやったが、全く体型が変わらなかった…</div>
+        <div class="trouble-box">✔ 極端な食事制限でリバウンドを繰り返してしまう…</div>
+        <div class="trouble-box">✔ 忙しくてまとまった時間が取れず、挫折してしまう…</div>
+        <div class="trouble-conclusion">
+            その原因、あなたの意思が弱いからではありません。<br>
+            「あなたに本当に合った正しいやり方」を知らなかっただけです。
+        </div>
+    </section>
+
+    <!-- ベネフィット -->
+    <section>
+        <h2><span>このコーチングで手に入る未来</span></h2>
+        <div class="benefit-card">
+            <h3>01. 確実な体型変化</h3>
+            <p>科学的根拠に基づいた筋トレと食事管理で、脂肪を落とし筋肉を残す理想のボディメイクを実現します。</p>
+        </div>
+        <div class="benefit-card">
+            <h3>02. 一生モノの知識</h3>
+            <p>リバウンドしない食事の選び方や正しいフォームが身につき、卒業後も自分で維持できるようになります。</p>
+        </div>
+        <div class="benefit-card">
+            <h3>03. 毎日のチャットサポート</h3>
+            <p>疑問や不安はその日のうちに解消。あなたのライフスタイルに完全寄り添い、モチベーションを途切れさせません。</p>
+        </div>
+    </section>
+
+    <!-- 実績・プロフィール -->
+    <section>
+        <h2><span>コーチ紹介・実績</span></h2>
+        <div class="profile-box">
+            <h3>大会出場・入賞経験を持つ本格トレーナー</h3>
+            <p>自身もボディメイクのコンテスト（ベストボディジャパン等）に出場・入賞した経験を持ち、肉体改造のリアルを熟知。<br><br>
+            科学的なトレーニング理論と栄養学（化学的アプローチ）をベースに、これまで多くの受講生のカラダを変えてきました。「ただ痩せるだけでなく、人生が前向きになるボディメイク」をモットーに徹底伴走します。</p>
+        </div>
+    </section>
+
+    <!-- 無料特典 -->
+    <section>
+        <h2><span>今だけの豪華3大無料特典</span></h2>
+        <p style="text-align: center; color: #94a3b8; margin-bottom: 25px;">公式LINEを追加していただいた方全員にプレゼント！</p>
+        <div class="gift-box">
+            <div class="gift-item"><span>特典1：</span>【自宅＆ジム別】最短で効果が出る筋トレ種目完全ガイド（PDF）</div>
+            <div class="gift-item"><span>特典2：</span>コンビニ・外食でも太らない！賢いメニュー選びの教科書</div>
+            <div class="gift-item" style="margin-bottom: 0;"><span>特典3：</span>あなたの目標に合わせた「無料個別カウンセリング・アドバイスセッション」（Zoom）</div>
+        </div>
+    </section>
+
+    <!-- 最終CTA -->
+    <section class="footer-cta">
+        <h2>変わりたいと思った「今」が、一番早いスタートライン</h2>
+        <p>理想のカラダを手に入れて、自分に自信を持ちませんか？<br>まずはお気軽に公式LINEへご登録ください！</p>
+        <a href="https://lin.ee/your-line-link" class="cta-button" target="_blank">👉 公式LINEを追加して特典を受け取る</a>
+        <div class="cta-sub">参加費無料・いつでもブロック可能です</div>
+    </section>
+</div>
+
+</body>
+</html>
